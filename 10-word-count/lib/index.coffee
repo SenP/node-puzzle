@@ -2,10 +2,7 @@ through2 = require 'through2'
 
 
 module.exports = ->
-  words = 0
-  lines = 0
-  chars = 0
-  bytes = 0
+  words = lines = chars = bytes = 0  
 
   transform = (chunk, encoding, cb) ->
     linesArr = chunk.split(/\n/g)
